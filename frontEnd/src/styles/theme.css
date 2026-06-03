@@ -1,0 +1,27 @@
+:root {
+  /* Cores principais */
+  --primary: #7c4dff;
+  --primary-dark: #6439db;
+
+  --secondary: #ff8c42;
+  --secondary-dark: #f06d17;
+
+  /* Backgrounds */
+  --background: #f5f7fb;
+  --surface: #ffffff;
+
+  /* Textos */
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+
+  /* Bordas */
+  --border: #e2e8f0;
+
+  /* Status */
+  --success: #48bb78;
+  --warning: #ecc94b;
+  --danger: #f56565;
+
+  /* Sombras */
+  --shadow: rgba(0, 0, 0, 0.08);
+}

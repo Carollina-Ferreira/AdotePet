@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 40px;
+}
+
+.title {
+  color: var(--primary);
+
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
