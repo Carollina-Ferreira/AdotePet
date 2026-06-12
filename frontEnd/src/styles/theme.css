@@ -1,27 +1,38 @@
 :root {
-  /* Cores principais */
-  --primary: #7c4dff;
-  --primary-dark: #6439db;
 
-  --secondary: #ff8c42;
-  --secondary-dark: #f06d17;
+  /* PRINCIPAIS */
+  --primary: #e2dbf1;
+  --primary-dark: #5736ea;
 
-  /* Backgrounds */
-  --background: #f5f7fb;
+  --secondary: #ff8c1a;
+  --secondary-dark: #f47d00;
+
+  --background: #f6f4fc;
   --surface: #ffffff;
 
-  /* Textos */
-  --text-primary: #2d3748;
-  --text-secondary: #718096;
+  /* TEXTOS */
+  --text-primary: #2e2b7f;
+  --text-secondary: #7c7c96;
 
-  /* Bordas */
-  --border: #e2e8f0;
+  /* BORDAS E SOMBRA */
+  --border: #e5e0f2;
+  --shadow: rgba(0,0,0,.08);
 
-  /* Status */
-  --success: #48bb78;
-  --warning: #ecc94b;
-  --danger: #f56565;
+  /* 🟣 AÇÕES (NOVO) */
+  --edit-bg: #8336ff;
+  --edit-text: #ffffff;
 
-  /* Sombras */
-  --shadow: rgba(0, 0, 0, 0.08);
+  --delete-bg: #ff2727;
+  --delete-text: #ffffff;
+
+  /* 🟢 STATUS (NOVO) */
+  --status-available-bg: #d1fae5;
+  --status-available-text: #119972;
+
+  --status-adopted-bg: #fee2e2;
+  --status-adopted-text: #991b1b;
+
+  --status-treatment-bg: #fef9c3;
+  --status-treatment-text: #854d0e;
+
 }

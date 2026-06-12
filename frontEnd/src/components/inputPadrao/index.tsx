@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 interface Props {
-  value: string | number;
+  value: string;
   onChange: (
     e: React.ChangeEvent<HTMLInputElement>
   ) => void;

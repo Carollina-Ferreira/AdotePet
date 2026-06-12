@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.sidebar {
+  width: 250px;
+  height: 150vh;
+
+  background: var(--background);
+  color: var(--text-primary);
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 2px 0 10px var(--shadow);
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* LOGO */
+.logoBox {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+}
+
+.adote {
+  color: var(--text-primary);
+}
+
+.pet {
+  color: var(--secondary);
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+
+  display: block;
+  margin-top: 4px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* LINKS */
+.nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.2s;
+}
+
+/* HOVER */
+.nav a:hover {
+  background: var(--primary-dark);
+  color: var(--surface);
+
+  transform: translateX(5px);
+
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* ÍCONES */
+.icon {
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* ÍCONE NO HOVER */
+.nav a:hover .icon {
+  color: var(--surface);
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: auto;
+}
+
+.footerImg {
+  width: 180px;
+  height: 200px;
+
+  object-fit: cover;
+}

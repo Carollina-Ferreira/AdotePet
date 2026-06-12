@@ -1,82 +1,60 @@
-import { useEffect, useState } from "react";
-import type Pet  from "../../types/pet.ts";
-
 import MainForm from "../../MainForm";
 import ListaPets from "../../listaPets";
 
-export default function Home() {
+import type Pet from "../../types/pet";
 
-  const [pets, setPets] =
-    useState<Pet[]>([]);
+import animais from "../../assets/animais.png";
+import styles from "./style.module.css";
+import { FaPaw } from "react-icons/fa";
 
-  const [petEditando, setPetEditando] =
-    useState<Pet | null>(null);
+interface Props {
+  adicionarPet: (pet: Omit<Pet, "id">) => void;
+  petEditando: Pet | null;
+  pets: Pet[];
+  deletePet: (id: number) => void;
+  setPetEditando: (pet: Pet) => void;
+}
 
-  useEffect(() => {
-    const dados =
-      localStorage.getItem("pets");
-
-    if (dados) {
-      setPets(JSON.parse(dados));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem(
-      "pets",
-      JSON.stringify(pets)
-    );
-  }, [pets]);
-
-  function addPet(
-    pet: Omit<Pet, "id">
-  ) {
-    setPets([
-      ...pets,
-      {
-        id: Date.now(),
-        ...pet
-      }
-    ]);
-  }
-
-  function updatePet(
-    petAtualizado: Pet
-  ) {
-    setPets(
-      pets.map((pet) =>
-        pet.id === petAtualizado.id
-          ? petAtualizado
-          : pet
-      )
-    );
-
-    setPetEditando(null);
-  }
-
-  function deletePet(id: number) {
-    setPets(
-      pets.filter(
-        (pet) => pet.id !== id
-      )
-    );
-  }
+export default function Home({
+  adicionarPet,
+  petEditando,
+  pets,
+  deletePet,
+  setPetEditando
+}: Props) {
 
   return (
-    <>
-      <h1>🐾 AdotePet</h1>
+    <main className={styles.content}>
 
-      <MainForm
-        addPet={addPet}
-        updatePet={updatePet}
-        petEditando={petEditando}
-      />
+      {/* HEADER FULL WIDTH */}
+      <div className={styles.banner}>
 
-      <ListaPets
-        pets={pets}
-        deletePet={deletePet}
-        setPetEditando={setPetEditando}
-      />
-    </>
+        <div className={styles.bannerText}>
+          <h1>
+            <FaPaw className={styles.icon} />
+            <span className={styles.adote}>Adote</span>
+            <span className={styles.pet}>Pet</span>
+          </h1>
+
+          <p>Sistema de Cadastro para Adoção</p>
+        </div>
+
+       <img src={animais} className={styles.bannerImg} alt="AdotePet" />
+      </div>
+
+      <div className={styles.body}>
+        <MainForm
+          adicionarPet={adicionarPet}
+          petEditando={petEditando}
+        />
+
+        <ListaPets
+          pets={pets}
+          deletePet={deletePet}
+          setPetEditando={setPetEditando}
+        />
+      </div>
+
+    </main>
   );
 }

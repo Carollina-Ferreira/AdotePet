@@ -5,11 +5,20 @@
   border: none;
   border-radius: 10px;
 
-  padding: 12px 20px;
+  height: 42px;              /* 👈 IGUAL AO INPUT */
+  padding: 0 20px;           /* 👈 remove quebra vertical */
 
   cursor: pointer;
 
   transition: 0.2s;
+
+  display: flex;             /* 👈 garante alinhamento do texto + ícone */
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  white-space: nowrap;
 }
 
 .button:hover {

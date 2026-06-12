@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 interface Props {
-  text: string;
+  text: React.ReactNode;
   type?: "button" | "submit";
   onClick?: () => void;
 }
