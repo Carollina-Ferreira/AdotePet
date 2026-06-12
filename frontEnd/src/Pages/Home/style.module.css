@@ -12,7 +12,7 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* 👈 chave do ajuste */
+  align-items: stretch; 
   border-radius: 0;
   padding-left: 30px;
 }
@@ -26,7 +26,7 @@
 /* TEXTO */
 .bannerText h1 {
   margin: 0;
-  color: white;
+  color: var(--surface);
   font-size: 2.5rem;
 
   display: flex;
@@ -56,7 +56,7 @@
 /* IMAGEM */
 .bannerImg {
   object-fit: cover;
-  align-self: flex-end; /* 👈 desce a imagem pro final */
+  align-self: flex-end; 
 }
 
 /* CONTEÚDO ABAIXO */

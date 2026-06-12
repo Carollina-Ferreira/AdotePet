@@ -9,56 +9,46 @@ import Sobre from "./Pages/Sobre";
 
 import type Pet from "./types/pet";
 
+import {
+  listarPets,
+  criarPet,
+  atualizarPet,
+  deletarPet
+} from "./services/pet.service";
+
 export default function App() {
   const [pets, setPets] = useState<Pet[]>([]);
   const [petEditando, setPetEditando] = useState<Pet | null>(null);
 
-  // carregar localStorage
-  useEffect(() => {
-    const petsSalvos = localStorage.getItem("pets");
-
-    if (petsSalvos) {
-      try {
-        setPets(JSON.parse(petsSalvos));
-      } catch {
-        setPets([]);
-      }
-    }
-  }, []);
-
-  // salvar localStorage
-  useEffect(() => {
-    localStorage.setItem("pets", JSON.stringify(pets));
-  }, [pets]);
-
-  function adicionarPet(pet: Omit<Pet, "id">) {
-    if (petEditando) {
-      setPets((prev) =>
-        prev.map((item) =>
-          item.id === petEditando.id
-            ? { ...pet, id: petEditando.id }
-            : item
-        )
-      );
-
-      setPetEditando(null);
-      return;
-    }
-
-    setPets((prev) => [
-      ...prev,
-      {
-        id: Date.now(),
-        ...pet
-      }
-    ]);
+  // 🔥 CARREGAR DO BACKEND
+  async function carregarPets() {
+    const data = await listarPets();
+    setPets(data);
   }
 
-  function deletePet(id: number) {
+  useEffect(() => {
+    carregarPets();
+  }, []);
+
+  // ➕ criar / editar
+  async function adicionarPet(pet: Omit<Pet, "id">) {
+    if (petEditando) {
+      await atualizarPet(petEditando.id, pet);
+      setPetEditando(null);
+    } else {
+      await criarPet(pet);
+    }
+
+    carregarPets();
+  }
+
+  // ❌ deletar
+  async function deletePet(id: number) {
     const confirmar = window.confirm("Deseja excluir este pet?");
     if (!confirmar) return;
 
-    setPets((prev) => prev.filter((pet) => pet.id !== id));
+    await deletarPet(id);
+    carregarPets();
   }
 
   return (
@@ -79,6 +69,7 @@ export default function App() {
               />
             }
           />
+
           <Route
             path="/pets"
             element={

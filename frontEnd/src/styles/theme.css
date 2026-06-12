@@ -1,6 +1,6 @@
 :root {
 
-  /* PRINCIPAIS */
+  /* ===== BASE ===== */
   --primary: #e2dbf1;
   --primary-dark: #5736ea;
 
@@ -9,30 +9,37 @@
 
   --background: #f6f4fc;
   --surface: #ffffff;
-
-  /* TEXTOS */
+  
+  /* ===== TEXTOS ===== */
   --text-primary: #2e2b7f;
   --text-secondary: #7c7c96;
 
-  /* BORDAS E SOMBRA */
+  /* ===== BORDAS / SOMBRA ===== */
   --border: #e5e0f2;
   --shadow: rgba(0,0,0,.08);
 
-  /* 🟣 AÇÕES (NOVO) */
-  --edit-bg: #8336ff;
-  --edit-text: #ffffff;
-
-  --delete-bg: #ff2727;
-  --delete-text: #ffffff;
-
-  /* 🟢 STATUS (NOVO) */
+  /* ===== STATUS ===== */
   --status-available-bg: #d1fae5;
-  --status-available-text: #119972;
+  --status-available-text: #065f46;
 
   --status-adopted-bg: #fee2e2;
   --status-adopted-text: #991b1b;
 
   --status-treatment-bg: #fef9c3;
   --status-treatment-text: #854d0e;
+  
+  /* ===== AÇÕES ===== */
+  --edit-bg: #ede9fe;
+  --edit-text: #6d28d9;
 
+  --delete-bg: #fee2e2;
+  --delete-text: #b91c1c;
+
+   /* ===== FORM / UI ===== */
+  --input-border: #ddd;
+  --input-focus: var(--primary);
+
+  --form-label: #2d2480;
+
+  --line: #e8e0ff;
 }

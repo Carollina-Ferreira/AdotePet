@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import InputPadrao from "../components/inputPadrao";
 import BotaoPadrao from "../components/botaoPadrao";
 
-import type Pet from "../types/pet";
+import type Pet from "../types/pet.ts";
+
 
 import styles from "./style.module.css";
 import { FaPaw } from "react-icons/fa";
@@ -16,7 +17,6 @@ interface Props {
   petEditando:
   Pet | null;
 }
-
 export default function MainForm({
   adicionarPet,
   petEditando

@@ -1,29 +1,31 @@
+/* ===== CARD ===== */
 .card {
-  background: white;
+  background: var(--surface);
   padding: 24px;
   border-radius: 18px;
-  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  box-shadow: 0 2px 10px var(--shadow);
   margin-bottom: 25px;
 }
 
-/* TÍTULO */
+/* ===== TÍTULO ===== */
 .title {
   color: var(--text-primary);
   font-size: 32px;
   margin-bottom: 15px;
+
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-/* LINHA */
+/* ===== LINHA ===== */
 .line {
   height: 2px;
-  background: #e8e0ff;
+  background: var(--line);
   margin-bottom: 20px;
 }
 
-/* FORM - AGORA LIMPO E ESTÁVEL */
+/* ===== FORM ===== */
 .form {
   display: grid;
   grid-template-columns: repeat(5, 1fr) auto;
@@ -31,7 +33,7 @@
   align-items: end;
 }
 
-/* CAMPOS (SEM DUPLICAÇÃO) */
+/* ===== CAMPOS ===== */
 .field,
 .fieldSmall {
   display: flex;
@@ -40,22 +42,22 @@
   width: 100%;
 }
 
-/* LABEL */
+/* ===== LABEL ===== */
 .field label,
 .fieldSmall label {
-  color: #2d2480;
+  color: var(--form-label);
   font-weight: 700;
   font-size: 14px;
 }
 
-/* INPUT / SELECT */
+/* ===== INPUT / SELECT ===== */
 input,
 select {
   height: 42px;
   width: 100%;
   box-sizing: border-box;
 
-  border: 1px solid #ddd;
+  border: 1px solid var(--input-border);
   border-radius: 10px;
 
   padding: 0 12px;
@@ -64,14 +66,14 @@ select {
   transition: 0.2s;
 }
 
-/* FOCO */
+/* ===== FOCO ===== */
 input:focus,
 select:focus {
   outline: none;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--input-focus);
 }
 
-/* BOTÃO */
+/* ===== BOTÃO ===== */
 .saveButton {
   height: 42px;
   padding: 0 20px;
@@ -79,25 +81,27 @@ select:focus {
   border: none;
   border-radius: 10px;
 
-  background: #ff8c00;
-  color: white;
+  background: var(--secondary);
+  color: var(--surface);
 
   font-weight: 700;
   cursor: pointer;
 
   white-space: nowrap;
+  transition: 0.2s;
 }
 
 .saveButton:hover {
-  opacity: 0.9;
+  background: var(--secondary-dark);
+  transform: translateY(-1px);
 }
 
-/* ÍCONES */
+/* ===== ÍCONES ===== */
 .icon {
   color: var(--text-primary);
 }
 
 .button {
-  color: white;
+  color: var(--surface);
   margin-right: 5px;
 }

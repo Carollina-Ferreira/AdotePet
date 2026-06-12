@@ -1,18 +1,15 @@
 .button {
   background-color: var(--secondary);
   color: var(--surface);
-
+  
   border: none;
   border-radius: 10px;
-
-  height: 42px;              /* 👈 IGUAL AO INPUT */
-  padding: 0 20px;           /* 👈 remove quebra vertical */
-
+  height: 42px;            
+  padding: 0 20px;         
   cursor: pointer;
 
   transition: 0.2s;
-
-  display: flex;             /* 👈 garante alinhamento do texto + ícone */
+  display: flex;             
   align-items: center;
   justify-content: center;
 

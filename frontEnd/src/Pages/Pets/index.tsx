@@ -1,7 +1,7 @@
 import ListaPets from "../../listaPets";
 import type Pet from "../../types/pet";
 
-import animais from "../../assets/animais.png";
+import animais from "../../assets/Design sem nome (10).png";
 import styles from "./style.module.css";
 import { FaPaw } from "react-icons/fa";
 
