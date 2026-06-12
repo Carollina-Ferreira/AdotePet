@@ -1,0 +1,12 @@
+-- CreateTable
+CREATE TABLE `Pet` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `nome` VARCHAR(191) NOT NULL,
+    `especie` VARCHAR(191) NOT NULL,
+    `raca` VARCHAR(191) NOT NULL,
+    `idade` INTEGER NOT NULL,
+    `status` VARCHAR(191) NOT NULL,
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

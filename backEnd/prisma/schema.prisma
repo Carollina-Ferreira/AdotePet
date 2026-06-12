@@ -5,7 +5,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  //output   = "../generated/prisma"
 }
 
 datasource db {
@@ -13,12 +12,11 @@ datasource db {
 }
 
 model Pet {
-  id       Int      @id @default(autoincrement())
-  nome     String
-  especie  String
-  raca     String
-  idade    Int
-  status   String
-
+  id        Int      @id @default(autoincrement())
+  nome      String
+  especie   String
+  raca      String
+  idade     Int
+  status    String
   createdAt DateTime @default(now())
 }
