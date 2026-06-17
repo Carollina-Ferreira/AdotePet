@@ -65,7 +65,8 @@ adotepet/
 │   ├── prisma/
 │   └── server.ts
 │
-└── README.md```
+└── README.md
+bash```
 
 aeea
 
