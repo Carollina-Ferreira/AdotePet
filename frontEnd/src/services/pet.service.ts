@@ -1,7 +1,12 @@
-const API_URL = "http://localhost:3001";
+const API_URL = "https://presume-example-degraded.ngrok-free.dev";
 
 export async function listarPets() {
-  const res = await fetch(`${API_URL}/pets`);
+  const res = await fetch(`${API_URL}/pets`, {
+    headers: {
+      "ngrok-skip-browser-warning": "true"
+    }
+  });
+
   return res.json();
 }
 
