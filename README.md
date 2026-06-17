@@ -47,6 +47,8 @@ O **AdotePet** é uma aplicação full stack que permite:
 
 ## 📁 Estrutura do projeto
 
+## 📁 Estrutura do projeto
+
 ```bash
 adotepet/
 ├── frontend/
@@ -63,9 +65,7 @@ adotepet/
 │   ├── prisma/
 │   └── server.ts
 │
-└── README.md
+└── README.md```
 
----
-
-ae
+aeea
 
