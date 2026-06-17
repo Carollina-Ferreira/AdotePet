@@ -62,8 +62,8 @@ export default function ListaPets({
           </div>
         </div>
       )}
-
-      <table className={styles.table}>
+      <div className={styles.tableWrapper}>
+  <table className={styles.table}>
         <thead>
           <tr>
             <th>Nome</th>
@@ -123,8 +123,9 @@ export default function ListaPets({
               );
             })
           )}
-        </tbody>
+                </tbody>
       </table>
     </div>
-  );
+  </div>
+);
 }

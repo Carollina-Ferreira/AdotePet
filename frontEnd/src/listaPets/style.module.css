@@ -1,18 +1,14 @@
 /* ===== CARD ===== */
 .card {
   background: var(--surface);
-
   border-radius: 18px;
-
   box-shadow: 0 2px 10px var(--shadow);
-
   padding: 20px;
 }
 
 /* ===== TÍTULO ===== */
 .title {
   color: var(--text-primary);
-
   font-size: 28px;
   margin-bottom: 20px;
 
@@ -59,6 +55,7 @@
 
 .search {
   width: 320px;
+  max-width: 100%;
   padding: 10px 12px 10px 40px;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -80,7 +77,6 @@
   padding: 10px 18px;
 
   cursor: pointer;
-
   font-weight: 600;
 
   transition: 0.2s;
@@ -92,9 +88,14 @@
 }
 
 /* ===== TABELA ===== */
+.tableWrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
 .table {
   width: 100%;
-
+  min-width: 800px;
   border-collapse: collapse;
 }
 
@@ -117,13 +118,9 @@
 /* ===== STATUS ===== */
 .status {
   padding: 4px 10px;
-
   border-radius: 12px;
-
   font-size: 12px;
-
   font-weight: 600;
-
   display: inline-block;
 }
 
@@ -145,7 +142,9 @@
 /* ===== AÇÕES ===== */
 .actions {
   display: flex;
+  justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .editButton,
@@ -161,11 +160,9 @@
   gap: 6px;
 
   font-weight: 600;
-
   transition: 0.2s;
 }
 
-/* EDITAR */
 .editButton {
   background: var(--edit-bg);
   color: var(--edit-text);
@@ -175,7 +172,6 @@
   filter: brightness(0.95);
 }
 
-/* EXCLUIR */
 .deleteButton {
   background: var(--delete-bg);
   color: var(--delete-text);
@@ -194,4 +190,64 @@
   text-align: center;
   padding: 20px;
   color: var(--text-secondary);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .search {
+    width: 250px;
+  }
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 22px;
+    flex-wrap: wrap;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rightControls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .searchContainer,
+  .search,
+  .newButton {
+    width: 100%;
+  }
+
+  .newButton {
+    justify-content: center;
+  }
+
+  .count {
+    text-align: center;
+  }
+}
+
+/* ===== CELULARES PEQUENOS ===== */
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .editButton,
+  .deleteButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
 }

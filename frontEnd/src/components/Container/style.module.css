@@ -1,4 +1,30 @@
 .container {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* CELULAR PEQUENO */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
 }
