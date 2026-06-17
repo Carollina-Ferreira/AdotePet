@@ -47,28 +47,6 @@ O objetivo do projeto é facilitar e incentivar a adoção responsável de anima
 
 ---
 
-## 📁 Estrutura do projeto
-
-```bash
-adotepet/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── styles/
-│   │   └── App.tsx
-│   └── vite.config.ts
-│
-├── backend/
-│   ├── src/
-│   ├── prisma/
-│   └── server.ts
-│
-└── README.md```
-
----
-
 ## ⚙️ Como executar o projeto localmente
 
 ### 1. Clone o repositório
