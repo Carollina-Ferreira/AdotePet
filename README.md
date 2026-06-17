@@ -67,6 +67,8 @@ adotepet/
 │
 └── README.md
 
+---
+
 ## ⚙️ Como executar o projeto localmente
 
 ### 1. Clone o repositório
