@@ -14,8 +14,6 @@ O **AdotePet** é uma aplicação full stack que permite:
 - Organização de dados de adoção
 - Interface simples, moderna e responsiva
 
-O objetivo do projeto é facilitar e incentivar a adoção responsável de animais.
-
 ---
 
 ## 🚀 Tecnologias utilizadas
@@ -39,61 +37,30 @@ O objetivo do projeto é facilitar e incentivar a adoção responsável de anima
 
 ---
 
-## 🌐 Deploy / Hospedagem
+## 🌐 Deploy
 
-- Front-end: https://vercel.com  
-- Back-end: https://render.com  
-- Banco de dados: https://aiven.io  
-
----
-
-## ⚙️ Como executar o projeto localmente
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/SEU-USUARIO/adotepet.git
-
-### 2. Acesse o projeto
-
-Após iniciar o front-end, acesse:
-
-http://localhost:5173
-
-### 3. Back-end
-
-```bash
-cd backend
-npm install
-npm run dev
-
-## 🔑 Variáveis de ambiente
-
-Crie um arquivo `.env` dentro do backend:
-
-```env
-DATABASE_URL="sua_url_do_banco"
-PORT=3000
-
-## ✨ Funcionalidades
-
-- 📋 Cadastro de pets
-- ✏️ Edição de pets
-- ❌ Remoção de pets
-- 🔍 Listagem dinâmica
-- 🌐 API conectada ao banco de dados
+- Front-end: Vercel  
+- Back-end: Render  
+- Banco de dados: Aiven  
 
 ---
 
-## 🛠️ Melhorias futuras
+## 📁 Estrutura do projeto
 
-- Sistema de login
-- Upload de imagens dos pets
-- Filtros de adoção
-- Painel administrativo
-- Deploy completo integrado
-
-## 👩‍💻 Desenvolvido por
-
-Carolina Ferreira Domingues  
-Projeto full stack para portfólio
+```bash
+adotepet/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   └── App.tsx
+│   └── vite.config.ts
+│
+├── backend/
+│   ├── src/
+│   ├── prisma/
+│   └── server.ts
+│
+└── README.md
