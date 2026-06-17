@@ -8,15 +8,15 @@
 /* ===== BANNER ===== */
 .banner {
   background: var(--primary);
-
   width: 100%;
 
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 
-  padding-left: 30px;
+  padding: 0 30px;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .bannerText {
@@ -27,16 +27,16 @@
 
 .bannerText h1 {
   margin: 0;
-  color: var(--surface);
+  color: var(--text-primary);
   font-size: 2.5rem;
 
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 .bannerText p {
-  margin: 5px 0 0 0;
+  margin-top: 6px;
   color: var(--text-secondary);
 }
 
@@ -53,11 +53,11 @@
 }
 
 .bannerImg {
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  align-self: flex-end;
+  object-fit: contain;
+  display: block;
 }
 
 /* ===== CONTEÚDO ===== */

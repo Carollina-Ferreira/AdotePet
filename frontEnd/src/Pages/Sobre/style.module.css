@@ -40,13 +40,14 @@ li {
 .banner {
   background: var(--primary);
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+
+  padding: 0 30px;
   overflow: hidden;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .bannerText {
@@ -57,16 +58,16 @@ li {
 
 .bannerText h1 {
   margin: 0;
-  color: var(--surface);
+  color: var(--text-primary);
   font-size: 2.5rem;
+
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-wrap: wrap;
 }
 
 .bannerText p {
-  margin: 5px 0 0 0;
+  margin-top: 6px;
   color: var(--text-secondary);
 }
 
@@ -83,13 +84,14 @@ li {
 }
 
 .bannerImg {
-  max-width: 380px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
-/* ===== TECNOLOGIAS (CARDS GRID) ===== */
+/* ===== TECNOLOGIAS ===== */
 .techGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -104,93 +106,7 @@ li {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* ===== DEPLOY CARDS ===== */
-.cardsContainer {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.cardDeploy {
-  flex: 1;
-  min-width: 200px;
-  background: var(--surface);
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.2s ease;
-}
-
-.cardDeploy:hover {
-  transform: translateY(-5px);
-}
-
-.cardDeploy h3 {
-  margin-bottom: 10px;
-  color: var(--text-primary);
-}
-
-.cardDeploy a {
-  color: var(--secondary);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* ===== TABLET ===== */
-@media (max-width: 1024px) {
-  .content {
-    padding: 25px;
-  }
-
-  .bannerText h1 {
-    font-size: 2rem;
-  }
-
-  .bannerImg {
-    max-width: 300px;
-  }
-}
-
-/* ===== CELULAR ===== */
-@media (max-width: 768px) {
-  .content {
-    padding: 15px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .banner {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .bannerText {
-    align-items: center;
-  }
-
-  .bannerText h1 {
-    font-size: 1.8rem;
-    justify-content: center;
-  }
-
-  .bannerImg {
-    max-width: 250px;
-  }
-
-  .cardsContainer {
-    flex-direction: column;
-  }
-
-  .cardDeploy {
-    width: 100%;
-  }
-}
-
+/* ===== DEPLOY ===== */
 .deployGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -222,7 +138,52 @@ li {
   text-decoration: none;
 }
 
-/* ===== CELULAR PEQUENO ===== */
+/* ===== RESPONSIVO (UNIFICADO) ===== */
+@media (max-width: 1024px) {
+  .content {
+    padding: 25px;
+  }
+
+  .bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .bannerImg {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bannerText {
+    align-items: center;
+  }
+
+  .bannerText h1 {
+    font-size: 1.8rem;
+    justify-content: center;
+  }
+
+  .bannerImg {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .bannerText h1 {
     font-size: 1.5rem;
