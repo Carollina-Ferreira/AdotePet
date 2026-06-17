@@ -38,65 +38,63 @@ export default function Sobre() {
           {/* ===== TECNOLOGIAS ===== */}
           <h2>Tecnologias Utilizadas</h2>
 
-          <h3>💻 Front-end</h3>
-          <ul className={styles.espaco}>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>CSS Modules</li>
-            <li>React Router DOM</li>
-          </ul>
+          <div className={styles.techGrid}>
+            <div className={styles.techCard}>
+              <h3>💻 Front-end</h3>
+              <ul>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>CSS Modules</li>
+                <li>React Router DOM</li>
+              </ul>
+            </div>
 
-          <h3>⚙️ Back-end</h3>
-          <ul className={styles.espaco}>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Prisma ORM</li>
-            <li>CORS</li>
-            <li>dotenv</li>
-          </ul>
+            <div className={styles.techCard}>
+              <h3>⚙️ Back-end</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Prisma ORM</li>
+                <li>CORS</li>
+                <li>dotenv</li>
+              </ul>
+            </div>
 
-          <h3>🗄️ Banco de Dados</h3>
-          <ul className={styles.espaco}>
-            <li>MySQL</li>
-            <li>MariaDB</li>
-          </ul>
-
-          <h3>🛠️ Ferramentas</h3>
-          <ul className={styles.espaco}>
-            <li>Git & GitHub</li>
-            <li>VS Code</li>
-            <li>npm</li>
-          </ul>
-
-          {/* ===== HOSPEDAGEM ===== */}
+            <div className={styles.techCard}>
+              <h3>🗄️ Banco de Dados</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>MariaDB</li>
+              </ul>
+            </div>
+          </div>
+          {/* ===== HOSPEDAGEM / DEPLOY ===== */}
           <h2>🌐 Hospedagem / Deploy</h2>
 
-          <h3>💻 Front-end</h3>
-          <ul className={styles.espaco}>
-            <li>
+          <div className={styles.deployGrid}>
+
+            <div className={styles.deployCard}>
+              <h3>💻 Front-end</h3>
               <a href="https://vercel.com" target="_blank" rel="noreferrer">
                 Vercel
               </a>
-            </li>
-          </ul>
+            </div>
 
-          <h3>⚙️ Back-end</h3>
-          <ul className={styles.espaco}>
-            <li>
+            <div className={styles.deployCard}>
+              <h3>⚙️ Back-end</h3>
               <a href="https://render.com" target="_blank" rel="noreferrer">
                 Render
               </a>
-            </li>
-          </ul>
+            </div>
 
-          <h3>🗄️ Banco de Dados</h3>
-          <ul className={styles.espaco}>
-            <li>
+            <div className={styles.deployCard}>
+              <h3>🗄️ Banco de Dados</h3>
               <a href="https://aiven.io" target="_blank" rel="noreferrer">
                 Aiven
               </a>
-            </li>
-          </ul>
+            </div>
+
+          </div>
         </div>
       </main>
     </div>
