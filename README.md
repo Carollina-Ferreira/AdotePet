@@ -1,54 +1,90 @@
+<div align="center">
+
 # 🐾 AdotePet
 
-Sistema de cadastro e gerenciamento de pets para adoção, desenvolvido para auxiliar ONGs e protetores independentes na organização de animais disponíveis para adoção.
+### Encontre um novo lar. Transforme uma vida. 💜💙
+
+Sistema Full Stack para cadastro e gerenciamento de animais disponíveis para adoção.
+
+<br>
+
+<img src="https://img.shields.io/badge/React-3B82F6?style=for-the-badge&logo=react&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-8B5CF6?style=for-the-badge&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-3B82F6?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/MySQL-8B5CF6?style=for-the-badge&logo=mysql&logoColor=white" />
+
+</div>
 
 ---
 
-## 📌 Sobre o projeto
+## 💡 Sobre o projeto
 
-O **AdotePet** é uma aplicação full stack que permite:
+O **AdotePet** é uma aplicação **Full Stack** desenvolvida para auxiliar ONGs e protetores independentes na organização e gerenciamento de animais disponíveis para adoção.
 
-- Cadastro de pets
-- Listagem de animais disponíveis para adoção
-- Edição e remoção de registros
-- Organização de dados de adoção
-- Interface simples, moderna e responsiva
+A plataforma permite cadastrar, visualizar, editar e remover informações dos pets, utilizando uma arquitetura que conecta **front-end, API, banco de dados e serviços de hospedagem**.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## ✨ Funcionalidades
+
+* 🐶 Cadastro de pets
+* 📋 Listagem de animais disponíveis para adoção
+* ✏️ Edição de informações
+* 🗑️ Remoção de registros
+* 🔄 Atualização dinâmica dos dados
+* 🔗 Integração entre Front-end e API
+* 🗄️ Persistência de dados em banco de dados
+* 📱 Interface responsiva
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+<div align="center">
 
 ### 💻 Front-end
-- React
-- TypeScript
-- React Router DOM
-- CSS Modules
-- Vite
+
+<img src="https://skillicons.dev/icons?i=react,ts,vite&theme=dark" />
+
+`React` • `TypeScript` • `React Router DOM` • `CSS Modules` • `Vite`
+
+<br>
 
 ### ⚙️ Back-end
-- Node.js
-- Express
-- Prisma ORM
-- CORS
-- dotenv
 
-### 🗄️ Banco de dados
-- MySQL / MariaDB (Aiven)
+<img src="https://skillicons.dev/icons?i=nodejs,express,prisma&theme=dark" />
+
+`Node.js` • `Express` • `Prisma ORM` • `CORS` • `dotenv`
+
+<br>
+
+### 🗄️ Banco de Dados
+
+<img src="https://skillicons.dev/icons?i=mysql&theme=dark" />
+
+`MySQL / MariaDB`
+
+</div>
 
 ---
 
 ## 🌐 Deploy
 
-- Front-end: Vercel  
-- Back-end: Render  
-- Banco de dados: Aiven  
+O projeto utiliza serviços de hospedagem para disponibilizar sua aplicação e infraestrutura:
+
+| Serviço       | Utilização              |
+| ------------- | ----------------------- |
+| ▲ **Vercel**  | Hospedagem do Front-end |
+| 🚀 **Render** | Hospedagem do Back-end  |
+| 🗄️ **Aiven** | Banco de Dados          |
 
 ---
 
 ## 📁 Estrutura do projeto
 
-```bash
+```text
 adotepet/
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -68,17 +104,15 @@ adotepet/
 
 ---
 
-## ⚙️ Como executar o projeto localmente
+## ⚙️ Como executar o projeto
 
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/adotepet.git
+git clone https://github.com/Carollina-Ferreira/AdotePet.git
 ```
 
----
-
-### 2. Front-end
+### 2. Configure o Front-end
 
 ```bash
 cd frontend
@@ -86,12 +120,13 @@ npm install
 npm run dev
 ```
 
-Acesse:  
+A aplicação estará disponível em:
+
+```text
 http://localhost:5173
+```
 
----
-
-### 3. Back-end
+### 3. Configure o Back-end
 
 ```bash
 cd backend
@@ -101,9 +136,9 @@ npm run dev
 
 ---
 
-## 🔑 Variáveis de ambiente
+## 🔐 Variáveis de ambiente
 
-Crie um arquivo `.env` dentro do backend:
+Crie um arquivo `.env` no diretório do back-end:
 
 ```env
 DATABASE_URL="sua_url_do_banco"
@@ -112,30 +147,34 @@ PORT=3000
 
 ---
 
-## ✨ Funcionalidades
+## 🚀 Próximas melhorias
 
-- 📋 Cadastro de pets
-- ✏️ Edição de pets
-- ❌ Remoção de pets
-- 🔍 Listagem dinâmica
-- 🌐 API conectada ao banco de dados
-
----
-
-## 🛠️ Melhorias futuras
-
-- Sistema de login
-- Upload de imagens dos pets
-- Filtros de adoção
-- Painel administrativo
-- Deploy completo integrado
+* 🔐 Sistema de autenticação e login
+* 📸 Upload de imagens dos pets
+* 🔎 Filtros para facilitar a busca por animais
+* 📊 Painel administrativo
+* 🔗 Melhorias na integração e deploy da aplicação
 
 ---
 
 ## 👩‍💻 Desenvolvido por
 
-Carolina Ferreira Domingues  
-Projeto full stack para portfólio
+<div align="center">
 
+### 💜 Carolina Ferreira 💙
 
+Estudante do **Técnico em Desenvolvimento de Sistemas — SENAI**
 
+Desenvolvedora Full Stack em formação 🚀
+
+<br>
+
+<a href="https://www.linkedin.com/in/carolina-ferreira-domingues-728bb4403/">
+<img src="https://img.shields.io/badge/LinkedIn-3B82F6?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://github.com/Carollina-Ferreira">
+<img src="https://img.shields.io/badge/GitHub-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</div>
